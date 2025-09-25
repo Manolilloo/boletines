@@ -5,7 +5,7 @@ public class Ej2 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Tabla de multiplicar");
-        System.out.println("Pon un numero");
+        System.out.println("Pon un número");
 
         int num = scanner.nextInt();
 
