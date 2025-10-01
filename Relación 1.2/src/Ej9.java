@@ -20,5 +20,7 @@ public class Ej9{
         } else {
             System.out.println(numero + " no es un número perfecto.");
         }
+
+        scanner.close();
     }
 }

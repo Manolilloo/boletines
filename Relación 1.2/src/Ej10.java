@@ -1,20 +1,23 @@
 import java.util.Scanner;
 
-public class Ej10{
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int numero;
+public class Ej10 {
+    static void main(String[] args) {
+        int num;
 
-        do {
-            System.out.print("Introduce un número entero positivo o cero: ");
-            numero = scanner.nextInt();
-        } while (numero < 0);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe un numero entero positivo");
 
-        long factorial = 1;
-        for (int i = 2; i <= numero; i++) {
-            factorial *= i;
+        num = sc.nextInt();
+
+        while (num < 0) {
+            System.out.println("Error, pon un numero positivo");
         }
 
-        System.out.println("El factorial de " + numero + " es: " + factorial);
+        long fact = 1;
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+
+        System.out.println("El factorial de " + num + " es " + fact);
     }
 }
