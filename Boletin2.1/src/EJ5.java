@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class EJ5 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
         System.out.print("Introduce un número: ");
-        int numero = sc.nextInt();
+        int numero = entrada.nextInt();
         boolean esPrimo = true;
 
         if (numero <= 1) {
             esPrimo = false;
         } else {
-            for (int i = 2; i < numero; i++) {
+            for (int i = 2; i <= numero / 2 && esPrimo; i++) {
                 if (numero % i == 0) {
                     esPrimo = false;
                 }
@@ -22,6 +22,6 @@ public class EJ5 {
         } else {
             System.out.println(numero + " no es primo.");
         }
-        sc.close();
+        entrada.close();
     }
 }

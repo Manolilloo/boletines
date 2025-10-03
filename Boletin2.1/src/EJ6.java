@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class EJ6 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner = new Scanner(System.in);
 
         System.out.print("Introduce el número de alumnos: ");
-        int numAlumnos = sc.nextInt();
+        int numAlumnos = scanner.nextInt();
 
         int aprobados = 0;
         int suspensos = 0;
 
         for (int i = 1; i <= numAlumnos; i++) {
             System.out.print("Nota del alumno " + i + ": ");
-            double nota = sc.nextDouble();
+            double nota = scanner.nextDouble();
 
             if (nota >= 5) {
                 aprobados++;
@@ -27,6 +27,6 @@ public class EJ6 {
         System.out.println("Aprobados: " + aprobados + " (" + porcentajeAprobados + "%)");
         System.out.println("Suspensos: " + suspensos + " (" + porcentajeSuspensos + "%)");
 
-        sc.close();
+        scanner.close();
     }
 }
