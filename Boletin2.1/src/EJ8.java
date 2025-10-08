@@ -14,13 +14,13 @@ public class EJ8 {
         if (a == 0) {
             System.out.println("No es una ecuación de segundo grado.");
         } else {
-            double discriminante = b * b - 4 * a * c;
+            double raiz = b * b - 4 * a * c;
 
-            if (discriminante > 0) {
-                double x1 = (-b + Math.sqrt(discriminante)) / (2 * a);
-                double x2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+            if (raiz > 0) {
+                double x1 = (-b + Math.sqrt(raiz)) / (2 * a);
+                double x2 = (-b - Math.sqrt(raiz)) / (2 * a);
                 System.out.println("Dos soluciones: x1 = " + x1 + ", x2 = " + x2);
-            } else if (discriminante == 0) {
+            } else if (raiz == 0) {
                 double x = -b / (2 * a);
                 System.out.println("Una solución: x = " + x);
             } else {

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class EJ6 {
     public static void main(String[] args) {
-        Scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Introduce el número de alumnos: ");
         int numAlumnos = scanner.nextInt();
