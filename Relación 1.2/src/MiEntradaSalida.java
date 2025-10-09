@@ -19,14 +19,12 @@ public class MiEntradaSalida {
         return sc.nextInt();
     }
 
-    static void main(String[] args) {
-        int b = MiEntradaSalida.leerEnteroPositivo("Introduce un numero entero positivo");
-        while (b < 0) {
-            System.out.println("--->" + b + " no es un numero positivo, por lo tanto, barrigon.");
-            b = sc.nextInt();
-        }
-        if (b >= 0) {
-            System.out.println("El numero que has introducido es: " + b);
-        }
+    public static int leerEnteroRango(String mensaje, int min, int max) {
+        System.out.println("Introduce un numero entre " + min + " y " + max + ": ");
+        if (min >= max) {
+            System.out.println("Error: el valor mínimo debe ser menor que el valor máximo.");
+            return -1;
+            //TODO: Cambiar esto al ver las excepciones
+        return sc.nextInt();
     }
 }

@@ -1,3 +1,5 @@
+package Boletin1;
+
 public class Sumas {
 
     static void main(String[] args) {

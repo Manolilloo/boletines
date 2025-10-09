@@ -1,3 +1,5 @@
+package Boletin1;
+
 import javax.swing.*;
 
 public class Prueba_Cuadro_Identificacion {
